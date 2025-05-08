@@ -1,7 +1,3 @@
-# template
+Testing Practice
 
-How to create new repo from template:
-gh repo create my-new-project --template byudhip/template
-
-Install dependencies:
-npm install
+Several simple tests for practice; for The Odin Project task
