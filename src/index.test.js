@@ -3,6 +3,7 @@ const {
   reverseString,
   Calculator,
   caesarCipher,
+  analyzeArray,
 } = require('./index.js');
 
 test('Capitalize first letter, jakarta should be returned as Jakarta', () => {
@@ -30,6 +31,15 @@ describe('Solve math functions', () => {
   });
 });
 
-test('Encrypt Bandung using Caesar Cipher should return Edqgxqj', () => {
-  expect(caesarCipher('Bandung', 3)).toBe('Edqgxqj');
+test('Encrypt "Hello, World!" using Caesar Cipher should return "Khoor, Zruog!"', () => {
+  expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
+});
+
+test('Given input of [1,8,3,4,2,6], return { average: 4, min: 1, max: 8, length: 6 }', () => {
+  expect(analyzeArray([1, 8, 3, 4, 2, 6])).toEqual({
+    average: 4,
+    min: 1,
+    max: 8,
+    length: 6,
+  });
 });
